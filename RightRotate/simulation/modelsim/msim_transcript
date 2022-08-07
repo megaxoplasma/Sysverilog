@@ -1,0 +1,45 @@
+# Reading pref.tcl
+# do RightRotate_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Ying/Desktop/HDL\ projects/RightRotate {C:/Users/Ying/Desktop/HDL projects/RightRotate/RightRotate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:26:51 on May 04,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Ying/Desktop/HDL projects/RightRotate" C:/Users/Ying/Desktop/HDL projects/RightRotate/RightRotate.sv 
+# -- Compiling module RightRotate
+# -- Compiling module RightRotate_tb
+# 
+# Top level modules:
+# 	RightRotate
+# 	RightRotate_tb
+# End time: 20:26:51 on May 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript rtl_work.RightRotate_tb
+# vsim -gui -l msim_transcript rtl_work.RightRotate_tb 
+# Start time: 20:45:38 on May 04,2021
+# Loading sv_std.std
+# Loading rtl_work.RightRotate_tb
+add wave -position insertpoint sim:/RightRotate_tb/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ying  Hostname: DESKTOP-UQ6RRIG  ProcessID: 1472
+#           Attempting to use alternate WLF file "./wlftywg4i8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftywg4i8
+run
+run
+run
+run
+run
+run
+quit
+# End time: 20:47:20 on May 04,2021, Elapsed time: 0:01:42
+# Errors: 0, Warnings: 2

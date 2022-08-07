@@ -1,0 +1,127 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May 26 16:16:04 2021
+# Process ID: 3172
+# Current directory: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5108 C:\Users\Ying\Desktop\HDL_projects\twos_comp_adder\twos_comp_adder.xpr
+# Log file: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/vivado.log
+# Journal file: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tv.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tv.sv
+add_files -norecurse -scan_for_includes C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv
+update_compile_order -fileset sources_1
+set_property used_in_synthesis false [get_files  C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv]
+set_property used_in_implementation false [get_files  C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv]
+set_property used_in_synthesis true [get_files  C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv]
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TwosCompAdder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+source TwosCompAdder_tb.tcl
+run all
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TwosCompAdder_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source TwosCompAdder_tb.tcl
+run all
+run 10 us
+run all
+run all
+add_force {/TwosCompAdder_tb/bitA} -radix hex {1 0ns}
+add_force {/TwosCompAdder_tb/bitB} -radix hex {1 0ns}
+run all
+run all
+close_sim
+launch_simulation
+source TwosCompAdder_tb.tcl
+run all
+run all
+run all
+run all
+close_sim
+launch_simulation
+source TwosCompAdder_tb.tcl
+run all
+run all
+run all
+run all
+run all
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source TwosCompAdder_tb.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source TwosCompAdder_tb.tcl
+run all
+close_sim
+launch_simulation
+source TwosCompAdder_tb.tcl
+run 10 us
+close_sim
+close_design
+launch_simulation
+source TwosCompAdder_tb.tcl
+close_sim
+launch_simulation
+source TwosCompAdder_tb.tcl
+run 10 us
+run all
+close_sim
+launch_simulation
+source TwosCompAdder_tb.tcl
+run all
+run all
+close_sim
+launch_simulation
+source TwosCompAdder_tb.tcl
+run all
+run 10 us
+close_sim

@@ -1,0 +1,11 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/Environment.sv" Line 29
+Stopped at time : 0 fs : File "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/Environment.sv" Line 29
+yayyyyyyyyyyyyyy
+Stopped at time : 0 fs : File "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/Environment.sv" Line 29
+$finish called at time : 395 ns : File "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/Environment.sv" Line 44
+$finish called at time : 395 ns : File "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/test.sv" Line 6
+Stopped at time : 80400 ns : File "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/Adder_TB.sv" Line 13
+Stopped at time : 80400 ns : File "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/Adder_TB.sv" Line 13
+Stopped at time : 80405 ns : File "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/Adder_TB.sv" Line 13

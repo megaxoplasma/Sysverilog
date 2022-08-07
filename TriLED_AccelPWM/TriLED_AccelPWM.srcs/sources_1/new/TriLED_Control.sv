@@ -1,0 +1,17 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 06/11/2021 06:15:41 PM
+// Design Name: 
+// Module Name: TriLED_Control
+// Additional Comments: Takes in values to control the tricolor LED on board
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module TriLED_Control(
+
+    );
+endmodule

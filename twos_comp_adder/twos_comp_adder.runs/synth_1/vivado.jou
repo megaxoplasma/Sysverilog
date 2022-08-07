@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu May 27 00:53:23 2021
+# Process ID: 1776
+# Current directory: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.runs/synth_1
+# Command line: vivado.exe -log TwosCompAdder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TwosCompAdder.tcl
+# Log file: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.runs/synth_1/TwosCompAdder.vds
+# Journal file: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TwosCompAdder.tcl -notrace

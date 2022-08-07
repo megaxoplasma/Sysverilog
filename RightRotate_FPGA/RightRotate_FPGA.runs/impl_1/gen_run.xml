@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1622066535">
+  <File Type="BITSTR-BMM" Name="RightRotate_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="RightRotate_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="RightRotate_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="RightRotate_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="RightRotate_top.tcl"/>
+  <File Type="OPT-TIMING" Name="RightRotate_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="RightRotate_top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="RightRotate_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="RightRotate_top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="RightRotate_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="RightRotate_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="RightRotate_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="RightRotate_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="RightRotate_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="RightRotate_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="RightRotate_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="RightRotate_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="RightRotate_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="RightRotate_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="RightRotate_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="RightRotate_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="RightRotate_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="RightRotate_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="RightRotate_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="RightRotate_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="RightRotate_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="RightRotate_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="RightRotate_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="RightRotate_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="RightRotate_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="RightRotate_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="RightRotate_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="RightRotate_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="RightRotate_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="RightRotate_top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="RightRotate_top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="RightRotate_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="RightRotate_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="RightRotate_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="RightRotate_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="RightRotate_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="RightRotate_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="RightRotate_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="RightRotate_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="RightRotate_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="RightRotate_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="RightRotate_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="RightRotate_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="RightRotate_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="RightRotate_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="RightRotate_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="RightRotate_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="RightRotate_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="RightRotate_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="RightRotate_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="RightRotate_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="RightRotate_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="RightRotate_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="RightRotate_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="RightRotate_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="RightRotate_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="RightRotate_top.nky"/>
+  <File Type="PDI-FILE" Name="RightRotate_top.pdi"/>
+  <File Type="RCFI_FILE" Name="RightRotate_top.rcfi"/>
+  <File Type="CFI_FILE" Name="RightRotate_top.cfi"/>
+  <File Type="RNPI_FILE" Name="RightRotate_top.rnpi"/>
+  <File Type="NPI_FILE" Name="RightRotate_top.npi"/>
+  <File Type="RBD_FILE" Name="RightRotate_top.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="RightRotate_top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="RightRotate_top.sysdef"/>
+  <File Type="BG-BGN" Name="RightRotate_top.bgn"/>
+  <File Type="BG-DRC" Name="RightRotate_top.drc"/>
+  <File Type="RDI-RDI" Name="RightRotate_top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Hex2LED.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RightRotate_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="RightRotate_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/HDL projects/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1620375902"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

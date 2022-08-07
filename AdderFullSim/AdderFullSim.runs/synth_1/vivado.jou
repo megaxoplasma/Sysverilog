@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Jun 11 15:36:35 2021
+# Process ID: 5528
+# Current directory: C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.runs/synth_1
+# Command line: vivado.exe -log Adder_Design.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Adder_Design.tcl
+# Log file: C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.runs/synth_1/Adder_Design.vds
+# Journal file: C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Adder_Design.tcl -notrace

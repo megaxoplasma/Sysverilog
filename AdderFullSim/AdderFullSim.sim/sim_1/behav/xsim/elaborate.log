@@ -1,0 +1,22 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto a0ea7ec508d64b2c9851c2bd19277e76 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Adder_TB_behav xil_defaultlib.Adder_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/Generator.sv:26]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 26, File C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/Generator.sv
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_Adder_Design_sv
+Compiling package std.std
+Compiling module xil_defaultlib.interf
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.Adder_Design
+Compiling module xil_defaultlib.Adder_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Adder_TB_behav

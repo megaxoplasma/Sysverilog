@@ -1,0 +1,252 @@
+
+*** Running vivado
+    with args -log SevenSeg_Demo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SevenSeg_Demo.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source SevenSeg_Demo.tcl -notrace
+Command: synth_design -top SevenSeg_Demo -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4416
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1027.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:295]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:310]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:324]
+INFO: [Synth 8-638] synthesizing module 'SevenSeg_Demo' [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:60]
+WARNING: [Synth 8-614] signal 'hexval' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:123]
+WARNING: [Synth 8-614] signal 'max_count' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:123]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:123]
+WARNING: [Synth 8-614] signal 'CLK' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:153]
+WARNING: [Synth 8-614] signal 'change_r' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:153]
+WARNING: [Synth 8-614] signal 'change_b' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:153]
+WARNING: [Synth 8-614] signal 'contr_vect' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:153]
+WARNING: [Synth 8-614] signal 'CLK' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:201]
+WARNING: [Synth 8-614] signal 'change' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:201]
+WARNING: [Synth 8-614] signal 'change_r' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:201]
+WARNING: [Synth 8-614] signal 'contr_vect_b' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:201]
+WARNING: [Synth 8-614] signal 'CLK' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:248]
+WARNING: [Synth 8-614] signal 'change' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:248]
+WARNING: [Synth 8-614] signal 'change_b' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:248]
+WARNING: [Synth 8-614] signal 'contr_vect_r' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:248]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/Hex2LED.vhd:7' bound to instance 'CONV1' of component 'Hex2LED' [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:429]
+INFO: [Synth 8-638] synthesizing module 'Hex2LED' [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/Hex2LED.vhd:12]
+WARNING: [Synth 8-614] signal 'X' is read in the process but is not in the sensitivity list [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/Hex2LED.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Hex2LED' (1#1) [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/Hex2LED.vhd:12]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/Hex2LED.vhd:7' bound to instance 'CONV2' of component 'Hex2LED' [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:430]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/Hex2LED.vhd:7' bound to instance 'CONV4' of component 'Hex2LED' [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:432]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/Hex2LED.vhd:7' bound to instance 'CONV5' of component 'Hex2LED' [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:433]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/Hex2LED.vhd:7' bound to instance 'CONV7' of component 'Hex2LED' [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:435]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/Hex2LED.vhd:7' bound to instance 'CONV8' of component 'Hex2LED' [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:436]
+INFO: [Synth 8-256] done synthesizing module 'SevenSeg_Demo' (2#1) [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/sources_1/imports/segmentledINT project/main.vhd:60]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1027.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1027.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1027.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1027.730 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/constrs_1/imports/HDL_projects/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/constrs_1/imports/HDL_projects/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.srcs/constrs_1/imports/HDL_projects/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SevenSeg_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SevenSeg_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1048.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1048.855 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1048.855 ; gain = 21.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1048.855 ; gain = 21.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1048.855 ; gain = 21.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1048.855 ; gain = 21.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 7     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1048.855 ; gain = 21.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1048.855 ; gain = 21.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1072.855 ; gain = 45.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1081.934 ; gain = 54.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1083.750 ; gain = 56.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1083.750 ; gain = 56.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1083.750 ; gain = 56.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1083.750 ; gain = 56.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1083.750 ; gain = 56.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1083.750 ; gain = 56.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   108|
+|3     |LUT1   |     6|
+|4     |LUT2   |   515|
+|5     |LUT3   |    17|
+|6     |LUT4   |    72|
+|7     |LUT5   |    31|
+|8     |LUT6   |    73|
+|9     |FDCE   |    32|
+|10    |FDRE   |   285|
+|11    |IBUF   |    15|
+|12    |OBUF   |    29|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1083.750 ; gain = 56.020
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1083.750 ; gain = 34.895
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1083.750 ; gain = 56.020
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1083.750 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 108 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'SevenSeg_Demo' is not ideal for floorplanning, since the cellview 'SevenSeg_Demo' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1083.750 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1083.750 ; gain = 56.020
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ying/Desktop/HDL_projects/PWM_LED_VHDLtest/PWM_LED_VHDLtest.runs/synth_1/SevenSeg_Demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SevenSeg_Demo_utilization_synth.rpt -pb SevenSeg_Demo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 22 13:43:45 2021...

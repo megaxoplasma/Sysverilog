@@ -1,0 +1,905 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May 26 16:16:04 2021
+# Process ID: 3172
+# Current directory: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5108 C:\Users\Ying\Desktop\HDL_projects\twos_comp_adder\twos_comp_adder.xpr
+# Log file: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/vivado.log
+# Journal file: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tv.sv'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1026.406 ; gain = 0.000
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tv.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tv.sv
+add_files -norecurse -scan_for_includes C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv
+update_compile_order -fileset sources_1
+set_property used_in_synthesis false [get_files  C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv]
+set_property used_in_implementation false [get_files  C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv]
+set_property used_in_synthesis true [get_files  C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv]
+launch_runs synth_1 -jobs 8
+[Wed May 26 18:29:35 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+set_property top TwosCompAdder [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed May 26 18:31:35 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed May 26 18:34:40 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv:17]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'registerA' [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:10]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'registerB' [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:11]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'result' [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:12]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TwosCompAdder
+Compiling module xil_defaultlib.TwosCompAdder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TwosCompAdder_tb_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim/xsim.dir/TwosCompAdder_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim/xsim.dir/TwosCompAdder_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed May 26 18:47:54 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 95.965 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Wed May 26 18:47:54 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1026.406 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '16' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TwosCompAdder_tb_behav -key {Behavioral:sim_1:Functional:TwosCompAdder_tb} -tclbatch {TwosCompAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TwosCompAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 0 ps  Iteration: 0  Process: /TwosCompAdder_tb/UUT/Always17_0
+  File: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv
+
+HDL Line: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv:18
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:02:17 . Memory (MB): peak = 1026.406 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:02:21 . Memory (MB): peak = 1026.406 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TwosCompAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:02:42 . Memory (MB): peak = 1026.406 ; gain = 0.000
+run all
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:01:26 . Memory (MB): peak = 1026.406 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu May 27 00:22:15 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv:19]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3633] port 'bitA' is already connected [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:7]
+ERROR: [VRFC 10-3633] port 'bitA' is already connected [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:9]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+WARNING: [VRFC 10-1771] potential always loop found [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv:19]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3633] port 'bitA' is already connected [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:7]
+ERROR: [VRFC 10-3633] port 'bitA' is already connected [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:9]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu May 27 00:50:32 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu May 27 00:53:20 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3633] port 'bitA' is already connected [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:7]
+ERROR: [VRFC 10-3633] port 'bitA' is already connected [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:9]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top TwosCompAdder_tb [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3633] port 'bitA' is already connected [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:7]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TwosCompAdder
+Compiling module xil_defaultlib.TwosCompAdder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TwosCompAdder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TwosCompAdder_tb_behav -key {Behavioral:sim_1:Functional:TwosCompAdder_tb} -tclbatch {TwosCompAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TwosCompAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TwosCompAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1026.406 ; gain = 0.000
+run all
+run 10 us
+run all
+run all
+add_force {/TwosCompAdder_tb/bitA} -radix hex {1 0ns}
+add_force {/TwosCompAdder_tb/bitB} -radix hex {1 0ns}
+run all
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3633] port 'bitA' is already connected [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:7]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TwosCompAdder
+Compiling module xil_defaultlib.TwosCompAdder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TwosCompAdder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TwosCompAdder_tb_behav -key {Behavioral:sim_1:Functional:TwosCompAdder_tb} -tclbatch {TwosCompAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TwosCompAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TwosCompAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1026.406 ; gain = 0.000
+run all
+run all
+run all
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3633] port 'bitA' is already connected [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:7]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TwosCompAdder
+Compiling module xil_defaultlib.TwosCompAdder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TwosCompAdder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TwosCompAdder_tb_behav -key {Behavioral:sim_1:Functional:TwosCompAdder_tb} -tclbatch {TwosCompAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TwosCompAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TwosCompAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1026.406 ; gain = 0.000
+run all
+run all
+run all
+run all
+run all
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3633] port 'bitA' is already connected [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:7]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TwosCompAdder
+Compiling module xil_defaultlib.TwosCompAdder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TwosCompAdder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TwosCompAdder_tb_behav -key {Behavioral:sim_1:Functional:TwosCompAdder_tb} -tclbatch {TwosCompAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TwosCompAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TwosCompAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1026.406 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TwosCompAdder_tb
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1445.488 ; gain = 239.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TwosCompAdder_tb' [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:3]
+	Parameter period bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'TwosCompAdder' [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'TwosCompAdder' (1#1) [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv:11]
+ERROR: [Synth 8-344] instance 'DUT' has duplicate port connection for port 'bitA' [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:7]
+WARNING: [Synth 8-7071] port 'bitB' of module 'TwosCompAdder' is unconnected for instance 'DUT' [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:7]
+WARNING: [Synth 8-7023] instance 'DUT' of module 'TwosCompAdder' has 5 connections declared, but only 4 given [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:7]
+ERROR: [Synth 8-6156] failed synthesizing module 'TwosCompAdder_tb' [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1494.355 ; gain = 287.992
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+4 Infos, 2 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TwosCompAdder_tb
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1494.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TwosCompAdder_tb' [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:3]
+	Parameter period bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'TwosCompAdder' [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'TwosCompAdder' (1#1) [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'TwosCompAdder_tb' (2#1) [C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1497.023 ; gain = 2.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1497.023 ; gain = 2.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1497.023 ; gain = 2.668
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1497.023 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1546.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1617.828 ; gain = 123.473
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1617.828 ; gain = 123.473
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TwosCompAdder
+Compiling module xil_defaultlib.TwosCompAdder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TwosCompAdder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TwosCompAdder_tb_behav -key {Behavioral:sim_1:Functional:TwosCompAdder_tb} -tclbatch {TwosCompAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TwosCompAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TwosCompAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1619.293 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TwosCompAdder
+Compiling module xil_defaultlib.TwosCompAdder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TwosCompAdder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TwosCompAdder_tb_behav -key {Behavioral:sim_1:Functional:TwosCompAdder_tb} -tclbatch {TwosCompAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TwosCompAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TwosCompAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1619.293 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TwosCompAdder
+Compiling module xil_defaultlib.TwosCompAdder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TwosCompAdder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TwosCompAdder_tb_behav -key {Behavioral:sim_1:Functional:TwosCompAdder_tb} -tclbatch {TwosCompAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TwosCompAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TwosCompAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1728.781 ; gain = 39.133
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TwosCompAdder
+Compiling module xil_defaultlib.TwosCompAdder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TwosCompAdder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TwosCompAdder_tb_behav -key {Behavioral:sim_1:Functional:TwosCompAdder_tb} -tclbatch {TwosCompAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TwosCompAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TwosCompAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1728.781 ; gain = 0.000
+run 10 us
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TwosCompAdder
+Compiling module xil_defaultlib.TwosCompAdder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TwosCompAdder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TwosCompAdder_tb_behav -key {Behavioral:sim_1:Functional:TwosCompAdder_tb} -tclbatch {TwosCompAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TwosCompAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TwosCompAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1728.781 ; gain = 0.000
+run all
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TwosCompAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TwosCompAdder_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.srcs/sources_1/new/TwosCompAdder_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwosCompAdder_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+"xelab -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 71bd97b739714832a9e9cf23357d1354 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TwosCompAdder_tb_behav xil_defaultlib.TwosCompAdder_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TwosCompAdder
+Compiling module xil_defaultlib.TwosCompAdder_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TwosCompAdder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ying/Desktop/HDL_projects/twos_comp_adder/twos_comp_adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TwosCompAdder_tb_behav -key {Behavioral:sim_1:Functional:TwosCompAdder_tb} -tclbatch {TwosCompAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TwosCompAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TwosCompAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1728.781 ; gain = 0.000
+run all
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 27 13:54:46 2021...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Jul  1 15:35:11 2021
+# Process ID: 8920
+# Current directory: C:/Users/Ying/Desktop/HDL_projects/OOB_SPI_TB/OOB_SPI_TB.runs/synth_1
+# Command line: vivado.exe -log SPI_If.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SPI_If.tcl
+# Log file: C:/Users/Ying/Desktop/HDL_projects/OOB_SPI_TB/OOB_SPI_TB.runs/synth_1/SPI_If.vds
+# Journal file: C:/Users/Ying/Desktop/HDL_projects/OOB_SPI_TB/OOB_SPI_TB.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SPI_If.tcl -notrace

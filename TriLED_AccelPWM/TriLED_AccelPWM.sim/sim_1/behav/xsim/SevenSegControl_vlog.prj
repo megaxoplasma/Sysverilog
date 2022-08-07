@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../TriLED_AccelPWM.srcs/sources_1/new/SevenSegControl.sv" \
+"../../../../TriLED_AccelPWM.srcs/sources_1/new/TriLED_Accel.sv" \
+"../../../../TriLED_AccelPWM.srcs/sources_1/imports/new/Hex2LED.sv" \
+"../../../../TriLED_AccelPWM.srcs/sources_1/new/SPI_interface.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
