@@ -1,9 +1,0 @@
-0.7
-2020.1
-May 27 2020
-20:09:33
-C:/Users/Ying/Desktop/HDL_projects/TriLED_AccelPWM/TriLED_AccelPWM.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
-C:/Users/Ying/Desktop/HDL_projects/TriLED_AccelPWM/TriLED_AccelPWM.srcs/sources_1/imports/new/Hex2LED.sv,1623949235,systemVerilog,,C:/Users/Ying/Desktop/HDL_projects/TriLED_AccelPWM/TriLED_AccelPWM.srcs/sources_1/new/SPI_interface.sv,,Hex2LED,,,,,,,,
-C:/Users/Ying/Desktop/HDL_projects/TriLED_AccelPWM/TriLED_AccelPWM.srcs/sources_1/new/SPI_interface.sv,1624908254,systemVerilog,,,,SPI_interface,,,,,,,,
-C:/Users/Ying/Desktop/HDL_projects/TriLED_AccelPWM/TriLED_AccelPWM.srcs/sources_1/new/SevenSegControl.sv,1624001381,systemVerilog,C:/Users/Ying/Desktop/HDL_projects/TriLED_AccelPWM/TriLED_AccelPWM.srcs/sources_1/imports/new/Hex2LED.sv;C:/Users/Ying/Desktop/HDL_projects/TriLED_AccelPWM/TriLED_AccelPWM.srcs/sources_1/new/SPI_interface.sv;C:/Users/Ying/Desktop/HDL_projects/TriLED_AccelPWM/TriLED_AccelPWM.srcs/sources_1/new/TriLED_Accel.sv,C:/Users/Ying/Desktop/HDL_projects/TriLED_AccelPWM/TriLED_AccelPWM.srcs/sources_1/new/TriLED_Accel.sv,,$unit_SevenSegControl_sv;SevenSegController,,,,,,,,
-C:/Users/Ying/Desktop/HDL_projects/TriLED_AccelPWM/TriLED_AccelPWM.srcs/sources_1/new/TriLED_Accel.sv,1623948118,systemVerilog,,C:/Users/Ying/Desktop/HDL_projects/TriLED_AccelPWM/TriLED_AccelPWM.srcs/sources_1/imports/new/Hex2LED.sv,,TriLED_Accel,,,,,,,,

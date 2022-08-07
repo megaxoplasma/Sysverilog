@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sources_1/new/Adder_Design.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder_Design
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/interface.sv" into library xil_defaultlib
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/Adder_TB.sv" into library xil_defaultlib
-WARNING: [VRFC 10-3609] overwriting previous definition of interface 'interf' [C:/Users/Ying/Desktop/HDL_projects/AdderFullSim/AdderFullSim.srcs/sim_1/imports/new/interface.sv:1]
-INFO: [VRFC 10-311] analyzing module Adder_TB

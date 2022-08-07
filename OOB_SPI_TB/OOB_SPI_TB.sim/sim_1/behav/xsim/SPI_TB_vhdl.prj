@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../OOB_SPI_TB.srcs/sources_1/imports/accelerometer package test/SPI_If.vhd" \
-"../../../../OOB_SPI_TB.srcs/sim_1/new/SPI_TB.vhd" \
-
-# Do not sort compile order
-nosort
